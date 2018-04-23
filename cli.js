@@ -56,7 +56,7 @@ var schemaPathMap = {};
 var metaElements = {};
 var schemaPath = path.resolve(argv.d);
 var outDir = path.resolve(argv.o);
-var schemaDir = argv.x ? path.resolve(argv.x) : outDir;
+var schemaDir = argv.x ? path.resolve(argv.x) : '';
 var target = fs.statSync(schemaPath);
 const readme = argv.n !== true;
 const schemaExtension = argv.e || 'schema.json';
